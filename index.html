@@ -21,5 +21,29 @@
 		</div>
 	</div>
 
+	<script>
+		const numberOfReloads = window.location.hash.substr(1) | 0;
+		window.location.hash = numberOfReloads + 1;
 
+		Array.prototype.sample = function() {
+			return this[Math.floor(Math.random() * this.length)];
+		}
+		var col = ['#DDA0DD', '#DB7093', ' #ee696e',
+			'#dc9589',
+			'#fac7c3',
+			'#7ef17c'
+		].sample()
+		var element = document.getElementById('fieldID');
+		element.style.background = col;
+		var element = document.getElementById('fieldID2');
+		element.style.background = col;
+		var element = document.getElementById('fieldID3');
+		element.style.background = col;
+		var element = document.getElementById('fieldID4');
+		element.style.background = col;
+		var element = document.getElementById('fieldID5');
+		element.style.background = col;
+		var element = document.getElementById('myBtn');
+		element.style.background = col;
+	</script>
 </body </html>
